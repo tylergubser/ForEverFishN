@@ -1,10 +1,29 @@
+import { Route, Switch } from "react-router-dom";
+import Login from "./components/Login.js";
+import Navbar from "./components/Navbar.js";
+import Home from "./components/Home.js";
+
+
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+      <Navbar />
+
+      <Switch>
+
+        <Route exact path="/">
+          <Home />
+        </Route>
+        
+        <Route exact path="/Login">
+          <Login />
+        </Route>
+
+
+      </Switch>
+
+
     </div>
   );
 }
