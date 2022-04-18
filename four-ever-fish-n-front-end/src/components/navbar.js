@@ -12,7 +12,7 @@ function Navbar() {
             <div
                 class="flex items-center justify-between h-16 max-w-screen-xl px-4 mx-auto"
             >
-                <div class="flex flex-1 w-0 lg:hidden">
+                <div class="flex flex-1 w-0 lg:hidden text-center">
                     <h1 className='text-center'> East Coast Fishing Co.</h1>
                 </div>
 
