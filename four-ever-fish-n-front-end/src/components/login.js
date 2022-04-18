@@ -2,87 +2,106 @@ import React from 'react'
 
 function Login() {
   return (
-    <div>
-        <section class="h-full gradient-form bg-gray-200 md:h-screen">
-  <div class="container py-12 px-6 h-full">
-    <div class="flex justify-center items-center flex-wrap h-full g-6 text-gray-800">
-      <div class="xl:w-10/12">
-        <div class="block bg-white shadow-lg rounded-lg">
-          <div class="lg:flex lg:flex-wrap g-0">
-            <div class="lg:w-6/12 px-4 md:px-0">
-              <div class="md:p-12 md:mx-6">
-                <div class="text-center">
-                  <img
-                    class="mx-auto w-48"
-                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
-                    alt="logo"
-                  />
-                  <h4 class="text-xl font-semibold mt-1 mb-12 pb-1">We are The Lotus Team</h4>
-                </div>
-                <form>
-                  <p class="mb-4">Please login to your account</p>
-                  <div class="mb-4">
-                    <input
-                      type="text"
-                      class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                      id="exampleFormControlInput1"
-                      placeholder="Username"
-                    />
-                  </div>
-                  <div class="mb-4">
-                    <input
-                      type="password"
-                      class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                      id="exampleFormControlInput1"
-                      placeholder="Password"
-                    />
-                  </div>
-                  <div class="text-center pt-1 mb-12 pb-1">
-                    <button
-                      class="inline-block px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-3"
-                      type="button"
-                      data-mdb-ripple="true"
-                      data-mdb-ripple-color="light"
-                    >
-                      Log in
-                    </button>
-                    <div class="text-gray-500" href="#!">Forgot password?</div>
-                  </div>
-                  <div class="flex items-center justify-between pb-6">
-                    <p class="mb-0 mr-2">Don't have an account?</p>
-                    <button
-                      type="button"
-                      class="inline-block px-6 py-2 border-2 border-red-600 text-red-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
-                      data-mdb-ripple="true"
-                      data-mdb-ripple-color="light"
-                    >
-                      Danger
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div
-              class="lg:w-6/12 flex items-center lg:rounded-r-lg rounded-b-lg lg:rounded-bl-none"
-              
+   
+
+<section class="relative flex flex-wrap lg:h-screen lg:items-center">
+  <div class="w-full px-4 py-12 lg:w-1/2 sm:px-6 lg:px-8 sm:py-16 lg:py-24">
+    <div class="max-w-lg mx-auto text-center">
+      <h1 class="text-2xl font-bold sm:text-3xl">Get Fishing Today!</h1>
+
+      <p class="mt-4 text-gray-500">
+        Login or signup to view the latest catch nationwide and the hottest spots to fish!
+      </p>
+    </div>
+
+    <form action="" class="max-w-md mx-auto mt-8 mb-0 space-y-4">
+      <div>
+        <label for="email" class="sr-only">User Name</label>
+
+        <div class="relative">
+          <input
+            type="text"
+            class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
+            placeholder="Enter Username"
+          />
+
+          <span class="absolute inset-y-0 inline-flex items-center right-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 text-gray-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <div class="text-white px-4 py-6 md:p-12 md:mx-6">
-                <h4 class="text-xl font-semibold mb-6">We are more than just a company</h4>
-                <p class="text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
-                </p>
-              </div>
-            </div>
-          </div>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+              />
+            </svg>
+          </span>
         </div>
       </div>
-    </div>
+
+      <div>
+        <label for="password" class="sr-only">Password</label>
+        <div class="relative">
+          <input
+            type="password"
+            class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
+            placeholder="Enter password"
+          />
+
+          <span class="absolute inset-y-0 inline-flex items-center right-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 text-gray-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between">
+        <p class="text-sm text-gray-500">
+          No account?
+          <a class="underline" href="">Sign up</a>
+        </p>
+
+        <button
+          type="submit"
+          class="inline-block px-5 py-3 ml-3 text-sm font-medium text-white bg-blue-500 rounded-lg"
+        >
+          Sign in
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div class="relative w-full h-64 sm:h-96 lg:w-1/2 lg:h-full">
+    <img
+      class="absolute inset-0 object-cover w-full h-full"
+      src="https://images.unsplash.com/photo-1529230117010-b6c436154f25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      alt=""
+    />
   </div>
 </section>
-    </div>
   )
 }
 

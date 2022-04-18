@@ -6,57 +6,93 @@ import mapSVG from "./images/mapSVG.svg"
 import hookSVG from "./images/hookSVG.svg"
 
 
-function navbar() {
+function Navbar() {
     return (
-        <div class="w-60 h-full shadow-md bg-white px-1 absolute">
-            <div class="pt-4 pb-2 px-6">
-                <div>
-                    <div class="flex items-center">
-                        <div class="shrink-0">
-                            <img src="https://m.media-amazon.com/images/I/31NXhN9iZoL._AC_SY355_.jpg" class="rounded-full w-10" alt="Avatar" />
+        <header class="shadow-sm">
+            <div
+                class="flex items-center justify-between h-16 max-w-screen-xl px-4 mx-auto"
+            >
+                <div class="flex flex-1 w-0 lg:hidden">
+                    <h1 className='text-center'> East Coast Fishing Co.</h1>
+                </div>
+
+                <div class="flex items-center space-x-4">
+
+                    <form class="hidden mb-0 lg:flex">
+                        <h1> East Coast Fishing Co.</h1>
+                    </form>
+                </div>
+
+
+
+                <ul
+                    class="items-center justify-center hidden space-x-8 text-sm font-medium lg:flex lg:flex-1 lg:w-0"
+                >
+                    <li class="relative">
+                        <div class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
+                            <img src={homeSVG} alt="home icon" className="w-5 h-5 mr-3" />
+                            <NavLink to="/Home">Home</NavLink>
                         </div>
-                        <div class="grow ml-3">
-                            <p class="text-sm font-semibold text-blue-600">COMPANY NAME</p>
+                    </li>
+                    <li class="relative">
+                        <div class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
+                            <img src={mapSVG} alt="home icon" className="w-5 h-5 mr-3" />
+                            <NavLink to="/Map">Map</NavLink>
                         </div>
+                    </li>
+                    <li class="relative">
+                        <div class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
+                            <img src={hookSVG} alt="home icon" className="w-5 h-5 mr-3 " />
+                            <NavLink to="/About">About</NavLink>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <div class="items-center hidden space-x-4 lg:flex">
+                    <div
+                        class="px-5 py-2 text-sm font-medium text-gray-600 bg-gray-100 rounded-lg"
+                        href=""
+                    >
+                        <NavLink to="/Login">Login</NavLink>
+                    </div>
+                    <div
+                        class="px-5 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg"
+                        href=""
+                    >
+                        Sign up
                     </div>
                 </div>
             </div>
-            <ul class="relative">
-                <li class="relative">
-                    <div class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
-                        <img src={loginSVG} alt="login icon" className="w-5 h-5 mr-3" />
-                        <NavLink to="/Login">Log in</NavLink>
-                    </div>
-                </li>
-                <li class="relative">
-                    <div class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
-                        <img src={homeSVG} alt="home icon" className="w-5 h-5 mr-3" />
-                        <NavLink to="/Home">Home</NavLink>
-                    </div>
-                </li>
-                <li class="relative">
-                    <div class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
-                        <img src={mapSVG} alt="home icon" className="w-5 h-5 mr-3" />
-                        <span>Map</span>
-                    </div>
-                </li>
-                <li class="relative">
-                    <div class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
-                        <img src={hookSVG} alt="home icon" className="w-5 h-5 mr-3 " />
-                        <span>About</span>
-                    </div>
-                </li>
-            </ul>
-            <div class="text-center bottom-0 absolute w-full font-light text-gray-700 text-sm">
-                <hr class="m-0" />
-                <p class="py-2">Designed by:</p>
-                <a href="https://www.linkedin.com/in/v12v0/" className=""> Vi V. | </a>
-                <a href="https://www.linkedin.com/in/stephen-talley-the-developer/"  className="text-sm" > Stephen T. | </a>
-                <a href="https://www.linkedin.com/in/echernicky/" className=""> Evan C. | </a>
-                <a href="http://www.linkedin.com/in/tyler-gubser" className=""> Tyler G.</a>
+            
+            {/* mobile view */}
+            <div class="border-t border-gray-100 lg:hidden">
+                <ul
+                    class="flex items-center justify-center p-4 overflow-x-auto text-sm font-medium"
+                >
+                    <li class="relative">
+                        <div class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
+                            <img src={homeSVG} alt="home icon" className="w-5 h-5 mr-3" />
+                            <NavLink to="/Home">Home</NavLink>
+                        </div>
+                    </li>
+                    <li class="relative">
+                        <div class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
+                            <img src={mapSVG} alt="home icon" className="w-5 h-5 mr-3" />
+                            <NavLink to="/Map">Map</NavLink>
+                        </div>
+                    </li>
+                    <li class="relative">
+                        <div class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
+                            <img src={hookSVG} alt="home icon" className="w-5 h-5 mr-3 " />
+                            <NavLink to="/About">About</NavLink>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </div>
+            {/* end ofmobile view */}
+        </header>
     )
 }
 
-export default navbar
+export default Navbar
