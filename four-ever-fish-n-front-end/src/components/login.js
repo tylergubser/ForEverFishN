@@ -10,7 +10,7 @@ function Login() {
       <h1 class="text-2xl font-bold sm:text-3xl">Get Fishing Today!</h1>
 
       <p class="mt-4 text-gray-500">
-        Login or signup to view the latest catch nationwide and the hottest spots to fish!
+        Login to view the latest catch amoung fishing enthusiasts and share your latest catch!
       </p>
     </div>
 
@@ -94,7 +94,7 @@ function Login() {
     </form>
   </div>
 
-  <div class="relative w-full h-64 sm:h-96 lg:w-1/2 lg:h-full">
+  <div class="relative w-full h-64 sm:h-96 lg:w-1/2 lg:h-screen">
     <img
       class="absolute inset-0 object-cover w-full h-full"
       src="https://images.unsplash.com/photo-1529230117010-b6c436154f25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
