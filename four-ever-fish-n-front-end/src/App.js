@@ -5,7 +5,7 @@ import Home from "./components/Home.js";
 import About from "./components/About.js"
 import Map from "./components/Map.js"
 import Footer from "./components/Footer.js";
-import NewCatch from "./components/NewCatch.js";
+import NewCatch from "./components/MyCatch.js";
 
 
 

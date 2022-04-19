@@ -20,20 +20,16 @@ function About() {
         <span
           class="hidden lg:inset-y-0 lg:absolute lg:w-16 lg:bg-gray-100 lg:block lg:-left-16"
         ></span>
-
         <div class="p-8 sm:p-16 lg:p-24">
           <h2 class="text-2xl font-bold sm:text-3xl">
           Together, We Can Better Sport Fishing.
           </h2>
-
           <p class="mt-4 text-gray-600">
             Here at East Coast Fishing, to better sport fishing starts with a dedication to those who have a passion for fishing.
             Our app was born out of fishing enthusiasts who did not have a platform centered around sharing catches as well as a centeralized
             place to log all catches. By combining modern and elegant design with easy to use features, we hope to remain hyper-focused on our 
             mission to constantly improve the fishing experience for our users.
           </p>
-
-          
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
-import loginSVG from "./images/loginSVG.svg"
-import homeSVG from "./images/homeSVG.svg"
+// import loginSVG from "./images/loginSVG.svg"
+// import homeSVG from "./images/homeSVG.svg"
 import mapSVG from "./images/mapSVG.svg"
 import hookSVG from "./images/hookSVG.svg"
 import fishSVG from "./images/fishSVG.svg"
