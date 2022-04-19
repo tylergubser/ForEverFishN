@@ -29,12 +29,7 @@ function Navbar() {
                 <ul
                     class="items-center justify-center hidden space-x-8 text-sm font-medium lg:flex lg:flex-1 lg:w-0"
                 >
-                  <li class="relative">
-                        <div class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
-                            <img src={fishSVG} alt="home icon" className="w-6 h-6 mr-3 " />
-                            <NavLink to="/Login">Login</NavLink>
-                        </div>
-                    </li>
+                  
                     <li class="relative">
                         <div class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
                             <img src={mapSVG} alt="home icon" className="w-6 h-6 mr-3" />
@@ -44,7 +39,7 @@ function Navbar() {
                     <li class="relative">
                         <div class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
                             <img src={fishingSVG} alt="home icon" className="w-6 h-6 mr-3 " />
-                            <NavLink to="/NewCatch">New Catch</NavLink>
+                            <NavLink to="/NewCatch">My Catches</NavLink>
                         </div>
                     </li>
                     <li class="relative">
@@ -53,7 +48,12 @@ function Navbar() {
                             <NavLink to="/About">About</NavLink>
                         </div>
                     </li>
-                   
+                    <li class="relative">
+                        <div class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
+                            <img src={fishSVG} alt="home icon" className="w-6 h-6 mr-3 " />
+                            <NavLink to="/Login">Login</NavLink>
+                        </div>
+                    </li>
 
                 </ul>
 
@@ -65,12 +65,6 @@ function Navbar() {
                 <ul
                     class="flex items-center justify-center p-4 overflow-x-auto text-sm font-medium"
                 >
-                     <li class="relative">
-                        <div class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
-                            <img src={fishSVG} alt="home icon" className="w-6 h-6 mr-3 " />
-                            <NavLink to="/Login">Login</NavLink>
-                        </div>
-                    </li>
                     <li class="relative">
                         <div class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
                             <img src={mapSVG} alt="home icon" className="w-6 h-6 mr-3" />
@@ -87,6 +81,12 @@ function Navbar() {
                         <div class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
                             <img src={hookSVG} alt="home icon" className="w-6 h-6 mr-3 " />
                             <NavLink to="/About">About</NavLink>
+                        </div>
+                    </li>
+                    <li class="relative">
+                        <div class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
+                            <img src={fishSVG} alt="home icon" className="w-6 h-6 mr-3 " />
+                            <NavLink to="/Login">Login</NavLink>
                         </div>
                     </li>
                 </ul>
